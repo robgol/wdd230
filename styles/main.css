@@ -28,15 +28,16 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   footer{
+    color: white;
     margin-top: 20px;
   }
   h1 {
     color: white;
-    text-shadow: 2px 2px 4px grey;
+    text-shadow: 2px 2px 4px black;
   }
   h2 {
     text-shadow: 2px 2px 4px grey;
    }
    .last-updated {
-    color: white;
+    color: rgb(207, 0, 0);
    }
