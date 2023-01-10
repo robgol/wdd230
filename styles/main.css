@@ -31,12 +31,12 @@ body {
     margin-top: 20px;
   }
   h1 {
-    color: teal;
-    text-shadow: 2px 2px 4px white;
+    color: white;
+    text-shadow: 2px 2px 4px grey;
   }
   h2 {
     text-shadow: 2px 2px 4px grey;
    }
    .last-updated {
-    color: orange;
+    color: white;
    }
