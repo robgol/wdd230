@@ -39,5 +39,6 @@ body {
     text-shadow: 2px 2px 4px grey;
    }
    .last-updated {
-    color: maroon;
-   }
+    color: white;
+    text-shadow: 2px 2px 4px maroon;
+  }
