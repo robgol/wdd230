@@ -6,7 +6,7 @@ body {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 40px;
   }
     header, footer {
     font-family: 'Lato', sans-serif;;
