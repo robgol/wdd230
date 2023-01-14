@@ -54,8 +54,14 @@ h1, h2 {
   font-size: 1.5em;
 }
 
-.card > img {
+.card > div > img {
   width: 100%;
     height: auto;
     max-width: 100%;
+    padding-top: 20px;
+}
+
+.card-content{
+  margin-left: 10px;
+  margin-right: 10px;
 }
