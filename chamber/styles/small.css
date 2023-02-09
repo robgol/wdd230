@@ -9,27 +9,47 @@ body {
     margin: auto;
     padding: 10px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .center-image {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
-    max-width: 10px;
+.head-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
 }
-
+.top-logo, .footer-logo {
+  display: block;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--accent1);
+	text-align: center;
+  margin: 0 auto;
+  margin-top: .5rem;
+  font-family: 'Arial', sans-serif;
+}
+nav a {
+	display: block;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+nav a:hover, .active {
+	background-color: var(--primary);
+	color: var(--accent2);
+}
 h1, h2, .heading {
   font-family: 'Lora', sans-serif;;
  }
 
 header, footer {
+    display: flex;
     font-family: 'Lato', sans-serif;;
     color: white;
     padding: 10px;
@@ -74,30 +94,6 @@ header, footer {
 .card-content{
   margin-left: 10px;
   margin-right: 10px;
-}
-nav {
-	display: flex;
-	flex-direction: column;
-	background-color: var(--accent1);
-	text-align: center;
-  margin: 0 auto;
-  margin-top: .5rem;
-  font-family: 'Arial', sans-serif;
-}
-nav div {
-	flex: 1 1 auto;
-}
-nav a {
-	display: block;
-	font-size: 1.2rem;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	padding: 20px;
-}
-nav a:hover, .active {
-	background-color: var(--primary);
-	color: var(--accent2);
 }
 table {
   font-family: arial, sans-serif;
@@ -158,4 +154,20 @@ tr:nth-child(even) {
 }
 ._15px{
   font-size: 15px;
+}
+#social-media {
+  width: fit-content;
+  display: flex;
+}
+header nav {
+  display: flex;
+  flex: 1;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
