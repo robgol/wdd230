@@ -1,20 +1,3 @@
-/*let add = document.getElementById("save");
-let favChapt = document.getElementById("favchap");
-let deleteBtn = document.getElementsByClassName("delete");
-
-add.addEventListener('click', function() {
-	if (favChapt.value != "") {
-        let deleteBottom = '<button class="delete">X</button>';
-        let htmlList = document.getElementById("list").innerHTML + "<li>" + favChapt.value + deleteBottom +"</li>";
-        //let list = document.getElementById("list").innerHTML;
-        document.getElementById("list").innerHTML =  htmlList;
-
-    }
-    else
-    {
-        alert("You need to indicate the Favourite Scripture");
-    }
-});*/
 
 const list = document.querySelector('ul');
 const input = document.querySelector('input');
