@@ -64,14 +64,14 @@
 /*
   ** main  grid
   */
-  .event { grid-area: event; height: 200px;}
-  .weather { grid-area: weather; height: 200px;}
-  .join { grid-area: join; height: 200px; }
+  .event { grid-area: event;}
+  .weather { grid-area: weather; }
+  .join { grid-area: join;}
   .hero { grid-area: hero; }
   .news-release { grid-area: news-release; }
   .spot-light-1 { grid-area: spot-light-1; }
   .spot-light-2 { grid-area: spot-light-2; }
-  .spot-light-3 { grid-area: spot-light-3; }
+  .spot-light-3 { grid-area: spot-light-3; display: inline; }
   .spot-lights {
       grid-area: spot-lights; 
       display: grid;
@@ -92,18 +92,5 @@
     'join news-release news-release spot-lights';
   gap: 10px;
   padding: 10px;
-  }
-  .main-grid-container > div {
-    background-color: rgba(169, 214, 254, 0.8);
-    text-align: center;
-    padding: 20px 0;
-  }
-  .main-grid-container > .spot-lights {
-    padding: 20px 20px;
-  }
-  .spot-lights > div {
-    background-color: rgba(13, 93, 163, 0.888);
-    text-align: center;
-    padding: 20px 0;
   }
 }
