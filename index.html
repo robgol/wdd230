@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="WDD 230 - Web Frontend Development, Robson Correia, course assignment portal">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+    
+    <!-- local styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <title>Robson Correia - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img src="images/robson.jpg" alt="Robson Correia">
+        <span>Robson Correia</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>Week 01: <a target="_blank" href="week01/holygrail.html">Layout</a> | <a target="_blank" href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/rmvcorreia/pen/dyrvGWJ">JS Pen</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> .:|:. Robson Correia .:|:. Praia, Cabo Verde</p>
+        <p class="last-modification"><small>Last Modification: <span id="lastModification"></span></small></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
