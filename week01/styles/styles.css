@@ -3,11 +3,14 @@ body {
     background-color: #f5f5f5;
     color: #333;
     margin: 0;
-    padding-top: 80px; 
+    padding-top: 80px; /* Espaço reservado para o header fixo */
+}
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #003366; 
+    color: #003366; /* Azul escuro */
+}
+
 header {
     background-color: #003366;
     color: white;
@@ -17,7 +20,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000; /* Garante que o header fique sobre outros elementos */
 }
 
 section {
