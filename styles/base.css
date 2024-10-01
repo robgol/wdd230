@@ -99,3 +99,54 @@ footer {
     text-align: center;
   }
 
+  #menu::before {
+	content: "≡";
+}
+#menu {
+    position: absolute; /* Allow it to be positioned relative to the header */
+    right: 1.25rem; /* 20px / 16 = 1.25rem */
+    top: 1.25rem; /* 20px / 16 = 1.25rem */
+    font-size: 1.875rem; /* 30px / 16 = 1.875rem */
+    text-decoration: none;
+    color: black;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+    background-color: teal;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.navigation a.active {
+    color: white; /* Cor do texto do item ativo */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo destacado para o item ativo */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    border-bottom: 3px solid  rgba(0, 0, 0, 0.5);; /* Linha inferior para enfatizar ainda mais */
+}
+
+#menu.show::before {
+	content: "X";
+}
+/* Mobile: hide menu items initially */
+.navigation ul li{
+	display: none;
+}
+
+/* Show menu items when the 'show' class is added */
+.navigation.show ul li {
+	display: block;
+}
