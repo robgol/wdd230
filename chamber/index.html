@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <!-- Base styles for both mobile and laptop -->
+  <link rel="stylesheet" href="styles/base.css">
+  <!-- Larger screen styles (for laptop/desktop) -->
+  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+</head>
+<body>
+
+  <!-- Header for both mobile and laptop -->
+  <header class="header">
+    <img src="logo.png" alt="Logo">
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#home" class="menu-item">Home</a>
+      <a href="#about" class="menu-item">About</a>
+      <a href="#services" class="menu-item">Services</a>
+      <a href="#contact" class="menu-item">Contact</a>
+    </nav>
+
+    <!-- Hamburger icon for mobile menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <div class="hero">
+    Hero Image/Content
+  </div>
+
+  <!-- Main content: different layout for mobile and laptop -->
+  <div class="main-content">
+    <div class="event-list">Event List</div>
+    <div class="hero">Hero Section</div>
+    <div class="spotlight">Spotlight</div>
+    <div class="weather">Weather</div>
+    <div class="spotlight">Spotlight</div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="join">Join</div>
+  <div class="news-release">News Release</div>
+  <div class="footer">Footer</div>
+
+  <!-- JavaScript to handle responsive menu -->
+  <script src="scripts/menu.js"></script>
+
+</body>
+</html>

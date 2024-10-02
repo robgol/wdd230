@@ -1,0 +1,38 @@
+/* Laptop/Desktop layout */
+.hero {
+    height: 400px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .event-list, .weather, .spotlight {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .join, .news-release {
+    grid-column: span 2;
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
