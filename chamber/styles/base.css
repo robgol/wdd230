@@ -1,83 +1,83 @@
-/* General styles for both mobile and laptop */
+/* base.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 10px;
-  }
-  
-  .header img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .hero {
-    background-color: #e2e2e2;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .spotlight {
-    background-color: #ddd;
-    text-align: center;
-    padding: 20px;
-    margin: 10px 0;
-  }
-  
-  /* Mobile layout */
-  @media (max-width: 768px) {
-    .hero {
-      height: 300px;
-    }
-  
-    .main-content {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-    }
-  
-    .main-content div {
-      width: 48%;
-      background-color: #f2f2f2;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    /* Show hamburger icon on mobile */
-    .menu-toggle {
-      display: block;
-    }
-  
-    /* Hide navigation menu by default on mobile */
-    .nav-menu {
-      display: none;
-    }
-  
-    /* Show the menu when the toggle is clicked */
-    .nav-menu.active {
-      display: flex;
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #003366; /* Header background color */
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav {
+  position: relative;
+}
+
+nav .menu-icon {
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: auto; /* Aligns the menu icon to the right */
+}
+
+nav ul {
+  list-style: none;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  background-color: rgba(0, 51, 102, 0.9); /* Menu background with transparency */
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Link color */
+  padding: 10px;
+  display: block;
+}
+
+nav ul.show {
+  display: flex; /* Show menu when toggled */
+}
+
+main {
+  padding: 20px;
+}
+
+.events-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero, .spotlight, .join-news {
+  margin-top: 20px;
+  background-color: rgba(0, 51, 102, 0.2); /* Spotlight background with transparency */
+}
+
+.spotlight-item, .join, .news-release {
+  padding: 20px;
+  background-color: rgba(0, 51, 102, 0.1); /* Additional sections with a lighter transparency */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366; /* Footer background color */
+  color: white; /* Footer text color */
+}

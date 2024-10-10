@@ -1,9 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const toggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
-  
-    toggle.addEventListener("click", function() {
-      navMenu.classList.toggle("active");
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  var menuIcon = document.querySelector('.menu-icon');
+  var menu = document.getElementById('menu');
+
+  menuIcon.addEventListener('click', function() {
+    menu.classList.toggle('show');
   });
-  
+});
