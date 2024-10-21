@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>HTML5 Start Site by Paul Cheney</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Course Proposal Application</h1>
+    <form method="get" action="thanks.html" class="wf1">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label>First Name* <input type="text" name="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" required></label>
+            <label>Phone <input type="tel" name="phone" placeholder="123555123"></label>
+            <label>Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
+            <label>Website <input type="url" name="url" placeholder="http://"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+                <label><input type="radio" name="audience" value="beginner"> Beginner</label>
+                <label><input type="radio" name="audience" value="intermediate"> Intermediate</label>
+                <label><input type="radio" name="audience" value="advanced"> Advanced</label>
+            
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label><input type="checkbox" name="client" value="yes"> FTP Client</label>
+                <label><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Funding</legend>
+            <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+            <label>Course Subject
+                <select name="subject">
+                    <option value="">Please Select &#9662;</option>
+                    <optgroup label="Web Development">
+                        <option value="html-css">HTML & CSS Basics</option>
+                        <option value="javascript">JavaScript for Beginners</option>
+                        <option value="frontend-frameworks">Front-End Frameworks (React, Angular, Vue)</option>
+                        <option value="backend-development">Back-End Development (Node.js, PHP, Python)</option>
+                        <option value="fullstack-development">Full Stack Development</option>
+                    </optgroup>
+                
+                    <optgroup label="Programming Languages">
+                        <option value="python">Python Programming</option>
+                        <option value="java">Java Development</option>
+                        <option value="cpp">C++ for Beginners</option>
+                        <option value="csharp">C# for .NET Development</option>
+                        <option value="javascript-es6">JavaScript (ES6 and beyond)</option>
+                    </optgroup>
+                
+                    <optgroup label="Database Management">
+                        <option value="sql-fundamentals">SQL Fundamentals</option>
+                        <option value="nosql-databases">NoSQL Databases (MongoDB, Cassandra)</option>
+                        <option value="database-design">Database Design & Optimization</option>
+                        <option value="data-warehousing">Data Warehousing & Big Data</option>
+                        <option value="database-security">Database Security</option>
+                    </optgroup>
+                
+                    <optgroup label="Networking & Security">
+                        <option value="networking-basics">Computer Networking Basics</option>
+                        <option value="cybersecurity">Cybersecurity Fundamentals</option>
+                        <option value="ethical-hacking">Ethical Hacking & Penetration Testing</option>
+                        <option value="network-security">Network Security & Firewalls</option>
+                        <option value="cloud-security">Cloud Security</option>
+                    </optgroup>
+                
+                    <optgroup label="Cloud Computing">
+                        <option value="aws-practitioner">AWS Cloud Practitioner</option>
+                        <option value="azure-fundamentals">Microsoft Azure Fundamentals</option>
+                        <option value="google-cloud">Google Cloud Platform</option>
+                        <option value="devops-aws">DevOps with AWS</option>
+                        <option value="cloud-infrastructure">Cloud Infrastructure Management</option>
+                    </optgroup>
+                
+                    <optgroup label="Data Science & AI">
+                        <option value="data-science-python">Data Science with Python</option>
+                        <option value="machine-learning">Machine Learning Basics</option>
+                        <option value="ai-fundamentals">Artificial Intelligence Fundamentals</option>
+                        <option value="data-analysis">Data Analysis & Visualization</option>
+                        <option value="deep-learning">Deep Learning with TensorFlow</option>
+                    </optgroup>
+                </select>
+            </label>
+
+            <label>How Many Authors <input type="number" name="authors"></label>
+
+        </fieldset>
+
+        <input type="submit" value="Propose My Course">
+
+    </form>    
+        
+</main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
