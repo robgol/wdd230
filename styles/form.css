@@ -1,0 +1,75 @@
+
+.form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.form legend {
+    color: teal;
+    padding: 0 .5rem;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    color: #141414;
+    font-size: .9rem;
+}
+
+.form div {
+    padding-top: 1rem;
+    color: #181bb9;
+    font-size: rem.9;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="url"],
+.form input[type="date"],
+.form select,
+.form input[type="number"]
+ {
+    display: block;
+    border: solid 1px rgb(223, 222, 222);
+    border-radius: 6px;
+    padding: .75rem;
+    color: #505050;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.form input[type="range"]{
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.form input[type="submit"] {
+    border: 2px solid  #04AA6D;
+    background-color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    transition-duration: 0.4s;
+    margin: -1rem 2% 2rem 2%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form input[type="submit"]:hover {
+
+    background-color: #04AA6D; 
+    color: white;
+}
+
+.form input:required {
+    border-right: solid 8px red ;
+}
+
+.form input:required:valid {
+    border-right: solid 8px green ;
+
+}

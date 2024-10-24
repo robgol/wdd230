@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Robson Correia, course assignment portal">
+    <meta name="author" content="Robson Correia">
+
+    <meta property="og:title" content="Robson Correia - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://opais.cv/wp-content/uploads//noticia_0000008230-711x400-1-696x392.jpg">
+    <meta property="og:url" content="https://robgol.github.io/wdd230/index.html">
+     
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+
+    
+    <!-- local styles -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalizecss.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
+    <link rel="stylesheet" href="styles/form.css">
+    
+    <title>Robson Correia - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img src="images/robson.webp" alt="Robson Correia">
+        <span>Robson Correia</span>
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <a id="menu" href="#" aria-label="Menu"></a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a class="active" href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Thank you for registering!</h1>
+            <p>Your submission has been received successfully. We will review the details and get back to you shortly.</p>
+            <p>If you have any further questions, feel free to contact us at this@mail.com.</p>
+            <p>Best regards,</p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> .:|:. Robson Michael Correia .:|:. Praia, Cabo Verde</p>
+        <p class="last-modification"><small>Last Modification: <span id="lastModification"></span></small></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
