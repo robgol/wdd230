@@ -1,0 +1,44 @@
+[
+    {
+        "familyName":"Correia",
+        "dateMovedIn":"01/28/2024",
+        "numberOfMembers":3,
+        "visitedByBishopric":"yes",
+        "familyMembers":[
+            {
+                "name":"Robson Correia",
+                "gender":"male",
+                "birthDate": "09/04/1988"
+            },
+            {
+                "name":"Alice Correia",
+                "gender":"female",
+                "birthDate": "02/06/1988"
+            },
+            {
+                "name":"Clara Correia",
+                "gender":"female",
+                "birthDate": "12/22/2022"
+            }
+        ]
+    },
+    {
+        "familyName":"Pires",
+        "dateMovedIn":"05/23/2024",
+        "numberOfMembers":2,
+        "visitedByBishopric":"no",
+        "familyMembers":[
+            {
+                "name":"Pedro Pires",
+                "gender":"male",
+                "birthDate": "09/12/1972"
+            },
+            {
+                "name":"Marta Pires",
+                "gender":"female",
+                "birthDate": "07/04/1976"
+            }
+        ]
+
+    }
+]
