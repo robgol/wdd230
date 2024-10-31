@@ -1,83 +1,209 @@
-/* base.css */
+/* Define color variables */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #e7f3ff;
+    --accent-color: #eee;
+    --background-color: #fff;
+    --text-color: #000;
+    --footer-background: #003366;
+    --footer-text-color: #fff;
+}
+
+/* Base Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
+/* Header and Navigation Bar */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #003366; /* Header background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    padding: auto;
 }
 
 header .logo img {
-  height: 50px;
+    max-width: 50px;
+    margin-right: 10px;
+    padding: auto;
 }
 
+header h1 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    padding: 1rem;
+   
+}
+
+/* Navigation Bar Styles */
 nav {
-  position: relative;
+    width: 100%;
+    background-color:var(--primary-color);
+    padding: 10px 0;
 }
 
-nav .menu-icon {
-  display: block;
-  font-size: 30px;
-  cursor: pointer;
-  margin-left: auto; /* Aligns the menu icon to the right */
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around; /* Space menu items evenly */
+    list-style: none;
 }
 
-nav ul {
-  list-style: none;
-  display: none; /* Hidden by default */
-  flex-direction: column;
-  background-color: rgba(0, 51, 102, 0.9); /* Menu background with transparency */
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 100%;
-  padding: 20px;
+.nav-menu ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    padding: 10px;
+    width: 1rem;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff; /* Link color */
-  padding: 10px;
-  display: block;
+.nav-menu ul li a:hover {
+    color: var(--primary-color); 
+    transition: color 0.3s ease;
+    background-color:var(--secondary-color);
 }
 
-nav ul.show {
-  display: flex; /* Show menu when toggled */
+.active {
+    color: var(--primary-color); 
+    background-color:var(--secondary-color);
 }
 
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 4px 0;
+}
+
+/* Main Content Layout */
 main {
-  padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "hero"
+        "events-weather"
+        "spotlight"
+        "join-news";
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
 }
 
 .events-weather {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    grid-area: events-weather;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.hero, .spotlight, .join-news {
-  margin-top: 20px;
-  background-color: rgba(0, 51, 102, 0.2); /* Spotlight background with transparency */
+.events, .weather {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
 }
 
-.spotlight-item, .join, .news-release {
-  padding: 20px;
-  background-color: rgba(0, 51, 102, 0.1); /* Additional sections with a lighter transparency */
+.spotlight {
+    grid-area: spotlight;
+    background-color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.join-news {
+    grid-area: join-news;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.join, .news {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #003366; /* Footer background color */
-  color: white; /* Footer text color */
+    text-align: center;
+    padding: 10px;
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    margin-top: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-menu ul.visible {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .events-weather {
+        grid-template-columns: 1fr;
+    }
+
+    .join-news {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Horizontal menu layout for larger screens */
+@media (min-width: 769px) {
+    .nav-menu ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        margin-left: 0;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
 }

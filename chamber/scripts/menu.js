@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var menuIcon = document.querySelector('.menu-icon');
-  var menu = document.getElementById('menu');
+// Toggle mobile menu visibility
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-menu ul');
 
-  menuIcon.addEventListener('click', function() {
-    menu.classList.toggle('show');
-  });
+hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('visible');
 });
+
+// Add CSS for the visible class in your CSS
